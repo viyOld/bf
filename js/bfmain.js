@@ -1,5 +1,5 @@
-let menuArray = ["№", "Задание", "Дата", "Старт" , "Завершение" , "Статус" ,  " Чек"];
-
+//let menuArray = ["№", "Задание", "Дата", "Старт" , "Завершение" , "Статус" ,  " Чек"];
+let menuArray = ["№", "Task", "Data", "Start" , "Finish" , "Status" ,  " Check"];
 
 function createTable(rowTable) {
   // body...
@@ -35,4 +35,4 @@ function createTable(rowTable) {
   elem.innerHTML = table;
 }
 
-createTable(14);
+createTable(34);
