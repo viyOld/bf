@@ -1,37 +1,39 @@
-// let menuMain = [
-// “Register”,
-// “Statistics”,
-// “Schedule”,
-// “Task”,
-// “Add”,
+let menuMain = []; //new Array(100);
+
+menuMain.push('Register');
+//	menuMain[11] = 	“Statistics”;
+//	menuMain[12] =  “Schedule”;
+menuMain.push('Task');
+//	menuMain[21] = “Add”;
 // “Copy”,
 // “Edit”,
 // “Delete”,
 // “Run Now”,
-// “Group”,
+menuMain.push('Group');
 // “Add”,
 // “Edit”,
 // “Delete”,
 // “Copy”,
 // “Show”,
-// “Source”,
+menuMain.push('Source');
 // “New”,
 // “Edit”,
 // “Delete”,
 // “Copy”,
-// “Storage”,
+menuMain.push('Storage');
+//menuMain[5] =  “Storage”;
 // “New”,
 // “Edit”,
 // “Delete”,
 // “Copy”,
-// “Configuration”,
+menuMain.push('Configuration');
 // “Export”,
 // “Import”,
 // “Users”,
 // “Views”,
 // “Start option”,
 // “Language”,
-// “Help”,
+menuMain.push('Help');
 // “Home page”,
 // “Manuals”,
 // “Report a problem”,
@@ -82,7 +84,7 @@ function createMainMenu() {
     for (i = 0; i < 7; i++) {
     	item = item + '<li class="nav-item">';
     	item = item + '<a class="nav-link" href="#">';
-    	item = item + 'Menu' + i;
+    	item = item + menuMain[i];
     	item = item + '</a>';
     	item = item + '</li>';
     }
@@ -96,7 +98,7 @@ function createMainMenu() {
     row = row + '</div>';
 
     //row = '<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">' + row + '</nav>';
-    row = '<nav class="navbar navbar-expand-lg navbar-dark  bg-dark">' + row + '</nav>';
+    row = '<nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top">'+ row + '</nav>';
     elem.innerHTML = row;
 }
 
